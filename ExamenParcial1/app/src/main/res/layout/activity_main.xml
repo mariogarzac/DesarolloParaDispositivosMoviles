@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/plusButton"
+        android:layout_width="63dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/plusSign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="63dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/minusSign"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/multiplyButton"
+        android:layout_width="63dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="96dp"
+        android:text="@string/multiplySign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/divideButton"
+        android:layout_width="63dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/divideSign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Num1EditText"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:textSize="15sp"
+        android:hint="@string/num1"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="#FFFFFF"
+        android:textColor= "#FFFFFF" />
+
+    <EditText
+        android:id="@+id/Num2EditText"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="116dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:textSize="15sp"
+        android:hint="@string/num2"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorHint="#FFFFFF"
+        android:textColor= "#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/ResultTextView"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="18sp"
+        android:text="= "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Num2EditText"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColorHint="#FFFFFF"
+        android:textColor= "#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/operandTextView"
+        android:layout_width="77dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="60dp"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toStartOf="@+id/Num2EditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:textColorHint="#FFFFFF"
+        android:textColor= "#FFFFFF"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

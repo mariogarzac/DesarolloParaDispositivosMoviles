@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mariogarzac.parcialdos.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/retirosFragment"
+        android:name="com.mariogarzac.parcialdos.RetirosFragment"
+        android:label="fragment_retiros"
+        tools:layout="@layout/fragment_retiros" />
+    <fragment
+        android:id="@+id/movimientosFragment"
+        android:name="com.mariogarzac.parcialdos.MovimientosFragment"
+        android:label="fragment_movimientos"
+        tools:layout="@layout/fragment_movimientos" />
+</navigation>

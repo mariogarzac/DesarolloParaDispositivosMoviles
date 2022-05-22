@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ExamenParcial1</string>
+    <string name="plusSign">+</string>
+    <string name="minusSign">-</string>
+    <string name="multiplySign">*</string>
+    <string name="divideSign">/</string>
+    <string name="num1">num1</string>
+    <string name="num2">num2</string>
+</resources>

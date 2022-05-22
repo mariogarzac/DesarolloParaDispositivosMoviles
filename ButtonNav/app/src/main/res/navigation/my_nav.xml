@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.mariogarzac.buttonnav.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="com.mariogarzac.buttonnav.MusicFragment"
+        android:label="fragment_music"
+        tools:layout="@layout/fragment_music" />
+    <fragment
+        android:id="@+id/configFragment"
+        android:name="com.mariogarzac.buttonnav.ConfigFragment"
+        android:label="fragment_config"
+        tools:layout="@layout/fragment_config" />
+    <fragment
+        android:id="@+id/otroFragment"
+        android:name="com.mariogarzac.buttonnav.otroFragment"
+        android:label="fragment_otro"
+        tools:layout="@layout/fragment_otro" />
+</navigation>

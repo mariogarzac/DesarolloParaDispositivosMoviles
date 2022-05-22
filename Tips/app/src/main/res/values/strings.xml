@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tips</string>
+    <string name="cost_of_service">Cost of Service</string>
+    <string name="how_was_your_service">How was your service?</string>
+    <string name="amazing_20">Amazing (20%)</string>
+    <string name="good_15">Good (15%)</string>
+    <string name="great_18">Great (18%)</string>
+    <string name="ok_10">OK (10%)</string>
+    <string name="calculate">Calculate</string>
+    <string name="round_up">Round up?</string>
+    <string name="textview_result">TextView</string>
+</resources>

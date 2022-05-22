@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="588dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/scrollview_para_la_app">
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/TitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/temperatureconverter"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupChoiceOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <TextView
+        android:id="@+id/FromTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="@string/from"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupChoiceOne"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ToTextView"
+        android:layout_width="18dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/to"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroupChoiceOne"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupChoiceOne"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupChoiceOne" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupChoiceOne"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/FahrenheitTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/fahrenheit"
+            android:textColor="#00838F" />
+
+        <RadioButton
+            android:id="@+id/CelciusTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/celcius"
+            android:textColor="#00838F"/>
+
+        <RadioButton
+            android:id="@+id/KelvinTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/kelvin"
+            android:textColor="#00838F"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radioGroupChoiceTwo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ToTextView">
+
+        <RadioButton
+            android:id="@+id/FahrenheitBot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fahrenheit"
+            android:textColor="#00838F"/>
+
+        <RadioButton
+            android:id="@+id/CelciusBot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/celcius"
+            android:textColor="#00838F" />
+
+        <RadioButton
+            android:id="@+id/KelvinBot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/kelvin"
+            android:textColor="#00838F"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/CalculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/calculate"
+        app:layout_constraintEnd_toEndOf="@+id/TempEditText"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/TempEditText"
+        app:layout_constraintTop_toBottomOf="@+id/TempEditText" />
+
+    <EditText
+        android:id="@+id/TempEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/temperature"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroupChoiceTwo"
+        app:layout_constraintStart_toStartOf="@+id/radioGroupChoiceTwo"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupChoiceTwo" />
+
+    <TextView
+        android:id="@+id/ResultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@+id/CalculateButton"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="@+id/CalculateButton"
+        app:layout_constraintTop_toBottomOf="@+id/CalculateButton" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="74dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/imagen"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toEndOf="@+id/TitleTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icons8_calculate_64" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="kelvin">Kelvin</string>
+    <string name="celcius">Celcius</string>
+    <string name="fahrenheit">Fahrenheit</string>
+    <string name="to">To</string>
+    <string name="from">From</string>
+    <string name="temperatureconverter">TemperatureConverter</string>
+    <string name="temperature">Temperature</string>
+    <string name="calculate">Calculate</string>
+    <string name="imagen">Imagen :)</string>
+    <string name="scrollview_para_la_app">ScrollView para la app</string>
+</resources>
